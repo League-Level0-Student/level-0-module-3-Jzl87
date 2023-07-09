@@ -18,7 +18,17 @@ public class BananaQuiz
 
 		//4. OPTIONAL: if they say something other than "yes?" or "no?"
 		//	show a pop up that says "You are bananas!?"
+		String bananas = JOptionPane.showInputDialog("Do you like bananas?");
+		if (bananas.equals("no")) {
+			JOptionPane.showMessageDialog(null, "You are crazy.");
+		} else if (bananas.equals("yes")) {
+			String hobby =JOptionPane.showInputDialog("Whats your favorite hobby?");
+			JOptionPane.showMessageDialog(null, hobby + " is so much better with bananas");
+		} else {
+			JOptionPane.showMessageDialog(null, "You are bananas");
+		}
 	
+		
 	}
 
 }

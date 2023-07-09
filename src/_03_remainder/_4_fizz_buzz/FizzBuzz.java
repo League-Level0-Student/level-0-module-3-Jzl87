@@ -5,10 +5,10 @@ package _03_remainder._4_fizz_buzz;
 /**
 * Fizz Buzz
 * 
-* In this project, we're going to build FizzBuzz. It's a children's game where
+* In this project, we're going to build fizzBuzz. It's a children's game where
 * you count from 1 to 20. Easy, right? Here's the catch: 
 * 
-* Instead of saying a number that is divisible by 3, say "Fizz".
+* Instead of saying a number that is divisible by 3, say "fizz".
 * And instead of saying a number that is divisible by 5, say "Buzz".
 * For numbers divisible by both 3 and 5, say "FizzBuzz".
 * 
@@ -28,15 +28,15 @@ public class FizzBuzz {
 		
 		for( int i = 1 ; i <= 20; i++ ) {
 			// Divisible by 3 and divisible by 5
-			if() {
+			if(i % 5 == 0 && i % 3 == 0) {
 				System.out.println("FizzBuzz");
 			}
 			// Divisible by 3
-			else if() { 
+			else if(i % 3 == 0) { 
 				System.out.println("Fizz");
 			}
 			// Divisible by 5
-			else if() {
+			else if(i % 5 == 0) {
 				System.out.println("Buzz");
 			}
 			else {
